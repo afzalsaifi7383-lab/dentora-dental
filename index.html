@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Dentora — Advanced Dental Care</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Three.js -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.min.js"></script>
 </head>
 
 <body>
 
+    <!-- NAVBAR -->
+
     <header class="navbar">
-        <div class="logo">DENTORA<span>+</span></div>
+
+        <div class="logo">
+            DENTORA<span>+</span>
+        </div>
 
         <nav>
             <a href="#home">Home</a>
@@ -22,14 +32,23 @@
         <a href="#appointment" class="nav-btn">
             Book Appointment
         </a>
+
     </header>
 
+
+    <!-- MAIN -->
+
     <main>
+
+        <!-- HERO -->
 
         <section id="home" class="hero">
 
             <div class="hero-content">
-                <p class="eyebrow">ADVANCED DENTAL CARE</p>
+
+                <p class="eyebrow">
+                    ADVANCED DENTAL CARE
+                </p>
 
                 <h1>
                     Your Smile.<br>
@@ -42,6 +61,7 @@
                 </p>
 
                 <div class="hero-buttons">
+
                     <a href="#appointment" class="primary-btn">
                         Book Appointment
                     </a>
@@ -49,69 +69,161 @@
                     <a href="#treatments" class="secondary-btn">
                         Explore Treatments
                     </a>
+
                 </div>
+
             </div>
 
+
+            <!-- 3D TOOTH -->
+
             <div class="hero-visual">
+
                 <div class="tooth-glow"></div>
-                <div class="tooth-placeholder">🦷</div>
+
+                <canvas id="tooth-canvas"></canvas>
+
             </div>
 
         </section>
 
+
+        <!-- TREATMENTS -->
+
         <section id="treatments" class="section">
-            <p class="eyebrow">OUR SERVICES</p>
-            <h2>Complete care for<br><span>your smile.</span></h2>
+
+            <p class="eyebrow">
+                OUR SERVICES
+            </p>
+
+            <h2>
+                Complete care for<br>
+                <span>your smile.</span>
+            </h2>
+
 
             <div class="cards">
 
                 <div class="card">
-                    <div class="card-number">01</div>
-                    <h3>Dental Implants</h3>
-                    <p>Natural-looking and long-lasting tooth replacement.</p>
+
+                    <div class="card-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Dental Implants
+                    </h3>
+
+                    <p>
+                        Natural-looking and long-lasting
+                        tooth replacement.
+                    </p>
+
                 </div>
 
-                <div class="card">
-                    <div class="card-number">02</div>
-                    <h3>Teeth Whitening</h3>
-                    <p>Professional whitening for a brighter confident smile.</p>
-                </div>
 
                 <div class="card">
-                    <div class="card-number">03</div>
-                    <h3>Smile Design</h3>
-                    <p>Personalized cosmetic dentistry designed for you.</p>
+
+                    <div class="card-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Teeth Whitening
+                    </h3>
+
+                    <p>
+                        Professional whitening for a brighter
+                        confident smile.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Smile Design
+                    </h3>
+
+                    <p>
+                        Personalized cosmetic dentistry
+                        designed for you.
+                    </p>
+
                 </div>
 
             </div>
+
         </section>
+
+
+        <!-- DOCTOR -->
 
         <section id="doctor" class="doctor-section">
+
             <div>
-                <p class="eyebrow">MEET YOUR DENTIST</p>
-                <h2>Care you can<br><span>trust.</span></h2>
-                <p>
-                    Advanced technology, gentle treatment and
-                    personalized dental care under one roof.
+
+                <p class="eyebrow">
+                    MEET YOUR DENTIST
                 </p>
+
+                <h2>
+                    Care you can<br>
+                    <span>trust.</span>
+                </h2>
+
+                <p>
+                    Advanced technology, gentle treatment
+                    and personalized dental care under one roof.
+                </p>
+
             </div>
+
         </section>
 
-        <section id="appointment" class="appointment">
-            <p class="eyebrow">READY FOR YOUR SMILE?</p>
-            <h2>Book your appointment.</h2>
 
-            <button class="primary-btn">
+        <!-- APPOINTMENT -->
+
+        <section id="appointment" class="appointment">
+
+            <p class="eyebrow">
+                READY FOR YOUR SMILE?
+            </p>
+
+            <h2>
+                Book your appointment.
+            </h2>
+
+            <a href="#contact" class="primary-btn">
                 Book Appointment
-            </button>
+            </a>
+
         </section>
 
     </main>
 
+
+    <!-- FOOTER -->
+
     <footer id="contact">
-        <div class="logo">DENTORA<span>+</span></div>
-        <p>Advanced Dental Care</p>
+
+        <div class="logo">
+            DENTORA<span>+</span>
+        </div>
+
+        <p>
+            Advanced Dental Care
+        </p>
+
     </footer>
+
+
+    <!-- MAIN JAVASCRIPT -->
 
     <script src="script.js"></script>
 
